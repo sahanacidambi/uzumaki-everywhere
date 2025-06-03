@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'GreenFuz';
+  src: url('Green\ Fuz.otf') format('opentype');
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: 'GreenFuz', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-panel {
+  text-align: center;
+  padding: 10px;
+  background: black;
+}
+
+.title {
+  font-size: 64px;
+  color: white;
+  margin: 0;
+}
+
+.main-panel {
+  display: flex;
+  flex: 1;
+}
+
+.side-panel {
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-panel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: black;
+}
+
+.center-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.right-panel {
+  background: black;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%
+}
+
+input, button {
+  font-family: 'GreenFuz', sans-serif;
+  font-size: 28px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+  margin: 0 auto;
+  width: 240px;
+  box-sizing: border-box;
+}
+#coordsDisplay {
+  color: red;
+  font-size: 48px;
+  line-height: 1.2;
+}
+#coordsDisplay .label {
+  color: white;
+  display: block;
+}
+
+#coordsDisplay .value {
+  color: red;
+  display: block;
+}
+/* Hide spinner arrows on number inputs */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
